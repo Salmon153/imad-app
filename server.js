@@ -31,7 +31,13 @@ app.get('/article-two',function(req,res){
 app.get('/article-three',function(req,res){
     res.send('Article -three is Here');
 });
+//module p:10's pracitle
 
+app.get('/test-db',function(req,res)
+{
+   //make selet request
+   //respose the request
+});
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
