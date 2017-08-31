@@ -40,11 +40,20 @@ app.get('/article-two',function(req,res){
 app.get('/article-three',function(req,res){
     res.send('Article -three is Here');
 });
+
+
 //module p:10's pracitle
 
+var pool=new(config);
 app.get('/test-db',function(req,res)
 {
    //make selet request
+   pool.query(SELECT * FROM artilce,function(err,result){
+       if(err){
+           res.status(500).send(err,toString();)
+       }
+       
+   });
    //respose the request
 });
 
